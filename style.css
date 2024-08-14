@@ -50,13 +50,13 @@ header p{
   grid-template-columns: 50px 50px max-content;
   justify-content:end;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
   font-size: 1.1rem;
   padding-right: 10px;
 
 }
 .notification {
-  justify-self: right;
+  justify-self: left;
 }
 
 .user-pfp {
