@@ -1,5 +1,5 @@
 body{
-    background-color: #D7ECFE;
+    background-color: #C5E2FC;
     display: grid;
     grid-template-columns: 1.3fr 4fr 2fr;
     grid-template-rows: 1fr 2fr 2fr;
@@ -9,9 +9,46 @@ body > *{
     outline: 1px solid black;
 }
 header{
-    background-color: #A2D2FF;
+    padding: 30px;
+    background-color: #EBF5FE;
     grid-column: 2/4;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 30px;
+    align-items: center;
+
 }
+.search{
+    display: flex;
+    gap: 10px;
+}
+
+.search input{
+    border-radius: 100px;
+    width: 100%;
+    background-color: #C5E2FC;
+    border: none;
+}
+
+.user
+{
+    display: grid;
+    grid-template-columns: 50px 50px max-content;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.notification{
+    justify-self: right;
+}
+
+.user-pfp{
+    height: 50px;
+    border-radius: 50%;
+} 
+
 aside{
     background-color: #FFAFCC;
     grid-row: 1/4;
