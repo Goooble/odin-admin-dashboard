@@ -1,3 +1,31 @@
 body{
+    background-color: #D7ECFE;
+    display: grid;
+    grid-template-columns: 1.3fr 4fr 2fr;
+    grid-template-rows: 1fr 2fr 2fr;
+    height: 100vh;
+}
+body > *{
+    outline: 1px solid black;
+}
+header{
+    background-color: #A2D2FF;
+    grid-column: 2/4;
+}
+aside{
+    background-color: #FFAFCC;
+    grid-row: 1/4;
+}
 
+.announcement, .trending{
+    background-color: #FFC8DD;
+}
+
+.announcement{
+
+}
+
+.trending{
+    grid-column: 3/4;
+    
 }
