@@ -103,6 +103,7 @@ nav a{
 }
 
 aside {
+    font-size: 1.1rem;
   background-color: #FF5C98;
   grid-row: 1/4;
   padding: 30px 20px;
@@ -111,7 +112,7 @@ aside {
   grid-template-rows: 30px;
   grid-auto-flow: row;
   grid-auto-rows: max-content;
-  gap: 50px;
+  gap: 80px;
   color: white;
   font-weight: bold;
   align-items: center;
@@ -129,7 +130,7 @@ aside p{
 
 aside ul{
     display: grid;
-    gap: 10px;
+    gap: 30px;
 }
 
 aside p, aside a{
@@ -138,19 +139,23 @@ aside p, aside a{
     align-items: center;
 }
 
-.body{
+main{
     padding: 20px;
     display: grid;
-    grid-template-columns: 5fr 2fr;
-    grid-template-rows: 30px 1fr 30px 1fr;
+    grid-template-columns: 7fr 2fr;
+    grid-template-rows: 30px 1fr 30px;
     row-gap: 15px;
     align-items: center;
-
+    column-gap: 20px;
 }
 
 .announcement-cont>div :first-child{
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bold;
+}
+
+.announcement-cont>div :last-child{
+    color: rgb(61, 61, 61);
 }
 
 .announcement-cont{
@@ -159,12 +164,17 @@ aside p, aside a{
     padding: 30px;
     border-radius: 20px;
     display: grid;
+    font-size: 0.8rem;
 }
 
 .announcement-cont div{
     border-bottom: 1px solid #A2D2FF;
     padding-bottom: 20px;
     padding-top: 10px;
+}
+
+.announcement-cont div:last-child{
+    border:none;
 }
 
 .announcement-cont p:last-child{
@@ -174,12 +184,60 @@ aside p, aside a{
   -webkit-box-orient: vertical; 
 }
 
+main p:last-child{
+    grid-column: 2/3;
+}
 
-main p:last-child { 
+.trending{
+    grid-column: 2/3;
+    background-color: #ebf5fe;
+    border-radius: 20px;
+    padding: 20px;
+    display: grid;
+    height: 100%;
+    grid-template-rows: repeat(4,1fr);
+    gap: 20px;
+}
+
+.trending>div{
+    display: flex;
+    gap: 20px;
+}
+
+
+.trending>div>div>p:last-child{
+    color: rgb(61, 61, 61);
+    font-size: 0.9rem;
+}
+
+
+.trending img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.trending-title{ 
     grid-column: 2/3;
 }
 
 main>p{
     font-size: 1.2rem;
     font-weight: bold;
+}
+
+.project-body{
+    grid-column: 1/2;
+    grid-row: 2/5;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.project-body div{
+    background-color: #ebf5fe;
+    border-radius: 20px;
+    padding: 20px;
 }
