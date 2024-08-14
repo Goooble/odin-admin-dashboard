@@ -48,7 +48,7 @@ header p{
 .user {
   display: grid;
   grid-template-columns: 50px 50px max-content;
-  justify-content:center;
+  justify-content:end;
   align-items: center;
   gap: 15px;
   font-size: 1.1rem;
@@ -96,15 +96,15 @@ ul{
 }
 
 nav a{
-    background-color: #FF5C98;
+    background-color: #394648;
     padding: 5px 20px;
     border-radius: 100px;
     color: white;
 }
 
 aside {
-    font-size: 1.1rem;
-  background-color: #FF5C98;
+    font-size: 1.3rem;
+  background-color: #394648;
   grid-row: 1/4;
   padding: 30px 20px;
   display: grid;
@@ -124,7 +124,7 @@ p>img{
 }
 
 aside p{
-    font-size: 1.3rem;
+    font-size: 2rem;
 
 }
 
@@ -236,8 +236,31 @@ main>p{
     gap: 20px;
 }
 
-.project-body div{
+.project-body>div{
     background-color: #ebf5fe;
     border-radius: 20px;
     padding: 20px;
+    display: grid;
+    grid-template-rows: 3fr 30px;
+    border-left:10px solid #7fa5c8;
+}
+
+.project-body .icon-box{
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+.project-body img{
+    width: 30px;
+    height: 30px;
+}
+.text-box :first-child{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.text-box :last-child{
+    font-size: 1.1rem;
+    color: rgb(61, 61, 61);
 }
