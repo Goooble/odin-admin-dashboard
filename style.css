@@ -40,7 +40,7 @@ header p{
 
 .search input {
   border-radius: 100px;
-  width: 100%;
+  width: 80%;
   background-color: #A2D2FF;
   border: none;
 }
@@ -48,7 +48,7 @@ header p{
 .user {
   display: grid;
   grid-template-columns: 50px 50px max-content;
-  justify-content:end;
+  justify-content:center;
   align-items: center;
   gap: 15px;
   font-size: 1.1rem;
